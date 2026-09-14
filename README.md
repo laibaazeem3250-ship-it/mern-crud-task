@@ -63,38 +63,6 @@ npm run dev
 
 Open the URL Vite prints (usually `http://localhost:5173`).
 
-## 4. Push to GitHub
-
-```bash
-cd mern-crud
-git init
-git add .
-git commit -m "MERN CRUD task manager"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
-```
-
-## 5. Deploy (for the "Deployed full-stack MERN app URL" deliverable)
-
-**Backend → Render**
-1. https://render.com → New > Web Service → connect your GitHub repo.
-2. Root directory: `backend`
-3. Build command: `npm install`
-4. Start command: `npm start`
-5. Add environment variables: `MONGO_URI`, `CLIENT_ORIGIN` (set this to your
-   Vercel frontend URL once you have it, e.g. `https://your-app.vercel.app`)
-6. Deploy — copy the resulting URL (e.g. `https://your-api.onrender.com`).
-
-**Frontend → Vercel**
-1. https://vercel.com → New Project → import the same GitHub repo.
-2. Root directory: `frontend`
-3. Framework preset: Vite (auto-detected)
-4. Add environment variable: `VITE_API_URL` = `https://your-api.onrender.com/api/tasks`
-5. Deploy — copy the resulting URL. That's your submission link.
-
-Once both are live, go back to Render and update `CLIENT_ORIGIN` to the
-final Vercel URL so CORS allows requests from your deployed frontend.
 
 ## Acceptance criteria checklist
 
